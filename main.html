@@ -1,16 +1,108 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .block-heading {
+      color: #3b99e0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .product img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+    .summary {
+      background-color: #f7fbff;
+      padding: 15px;
+      border-top: 2px solid #5ea4f3;
+    }
+    .summary .summary-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .summary .summary-item:last-child {
+      border-bottom: none;
+    }
+    .summary .btn {
+      width: 100%;
+      background-color: #3b99e0;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container my-5">
+    <h2 class="block-heading">Shopping Cart</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Product Block 1 -->
+        <div class="product">
+          <img src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg" class="img-fluid" alt="Product 1">
+          <div>
+            <h5 class="text-primary">I am very sorry</h5>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="ml-auto text-right">
+            <p class="mb-2">Quantity:</p>
+            <input type="number" class="form-control mb-2" value="0" min="0">
+            <p class="text-right">$120</p>
+          </div>
+        </div>
+        <!-- Repeat product blocks as needed -->
+        <!-- Product Block 2 -->
+        <div class="product">
+          <img src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg" class="img-fluid" alt="Product 2">
+          <div>
+            <h5 class="text-primary">I am very sorry</h5>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="ml-auto text-right">
+            <p class="mb-2">Quantity:</p>
+            <input type="number" class="form-control mb-2" value="1" min="0">
+            <p class="text-right">$120</p>
+          </div>
+        </div>
+        <!-- Product Block 3 -->
+        <div class="product">
+          <img src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH-320-80.jpg" class="img-fluid" alt="Product 3">
+          <div>
+            <h5 class="text-primary">I am very sorry</h5>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="ml-auto text-right">
+            <p class="mb-2">Quantity:</p>
+            <input type="number" class="form-control mb-2" value="1" min="0">
+            <p class="text-right">$120</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="summary">
+          <h5 class="summary-title">Summary</h5>
+          <div class="summary-item"><span>Subtotal</span><span class="float-right">$360</span></div>
+          <div class="summary-item"><span>Discount</span><span class="float-right">$0</span></div>
+          <div class="summary-item"><span>Shipping</span><span class="float-right">$0</span></div>
+          <div class="summary-item"><span>Total</span><span class="float-right">$360</span></div>
+          <button class="btn mt-3">checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
